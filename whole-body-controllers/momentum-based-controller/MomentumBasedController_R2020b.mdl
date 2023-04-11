@@ -1,0 +1,4304 @@
+Model {
+  Name			  "MomentumBasedController_R2020b"
+  Version		  10.2
+  SavedCharacterEncoding  "UTF-8"
+  ModelUUID		  "3ad64d21-b954-4bf0-81d9-cbc6236cd9f3"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "4.4"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 28
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Add Equality Constraints"
+      Path		      "MomentumBasedController_R2020b/Controller/Add Equality Constraints"
+      SID		      "487"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/Configuration"
+      Path		      "MomentumBasedController_R2020b/Controller/Configuration"
+      SID		      "306"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Force Ergonomy Optimization"
+      Path		      "MomentumBasedController_R2020b/Controller/Force Ergonomy Optimization"
+      SID		      "485"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Get Model State and Dynamics"
+      Path		      "MomentumBasedController_R2020b/Controller/Get Model State and Dynamics"
+      SID		      "342"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/States/GetMeasurement"
+      Path		      "MomentumBasedController_R2020b/Controller/GetMeasurement"
+      SID		      "309"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/States/GetMeasurement"
+      Path		      "MomentumBasedController_R2020b/Controller/GetMeasurement1"
+      SID		      "314"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/States/GetMeasurement"
+      Path		      "MomentumBasedController_R2020b/Controller/GetMeasurement2"
+      SID		      "541"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/State Bus Deserializer"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/State Bus Deserializer"
+      SID		      "462"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/State Bus Serializer"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/State Bus Serializer"
+      SID		      "461"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/holder\n"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/holder "
+      SID		      "463"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/holder\n"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/holder 1"
+      SID		      "464"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/holder\n"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/holder 2"
+      SID		      "465"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/holder\n"
+      Path		      "MomentumBasedController_R2020b/Controller/Initial State Holder/holder 3"
+      SID		      "466"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Inverse Dynamics"
+      Path		      "MomentumBasedController_R2020b/Controller/Inverse Dynamics"
+      SID		      "447"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Momentum Controller"
+      Path		      "MomentumBasedController_R2020b/Controller/Momentum Controller"
+      SID		      "443"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/Postural Task Controller"
+      Path		      "MomentumBasedController_R2020b/Controller/Postural Task Controller"
+      SID		      "324"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Actuators/SetReferences"
+      Path		      "MomentumBasedController_R2020b/Controller/SetReferences"
+      SID		      "484"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/State Yarp Publisher"
+      Path		      "MomentumBasedController_R2020b/Controller/State Yarp Publisher"
+      SID		      "340"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/State Yarp Publisher"
+      Path		      "MomentumBasedController_R2020b/Controller/State Yarp Publisher1"
+      SID		      "460"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/State-Machine Reference Generator"
+      Path		      "MomentumBasedController_R2020b/Controller/State-Machine Reference Generator"
+      SID		      "448"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "RobotStateLibrary/emergency stop: joint limits"
+      Path		      "MomentumBasedController_R2020b/Controller/emergency stop: joint limits1"
+      SID		      "568"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/YarpWrite"
+      Path		      "MomentumBasedController_R2020b/Controller/joint position"
+      SID		      "520"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Discrete/Difference"
+      Path		      "MomentumBasedController_R2020b/Dump and visualize/Time Scope/Difference"
+      SID		      "292"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Discrete/Difference"
+      Path		      "MomentumBasedController_R2020b/Dump and visualize/Time Scope/Difference1"
+      SID		      "493"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/holder\n"
+      Path		      "MomentumBasedController_R2020b/Dump and visualize/Time Scope/holder "
+      SID		      "491"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/Simulator Synchronizer"
+      Path		      "MomentumBasedController_R2020b/synchronizer/GAZEBO_SYNCHRONIZER/Simulator Synchronizer"
+      SID		      "5"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/Real Time Synchronizer"
+      Path		      "MomentumBasedController_R2020b/synchronizer/REAL_TIME_SYNC/Real Time Synchronizer"
+      SID		      "10"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "WBToolboxLibrary/Utilities/Yarp Clock"
+      Path		      "MomentumBasedController_R2020b/synchronizer/Yarp Clock"
+      SID		      "12"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  EnableAccessToBaseWorkspace on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "%% initialize the simulation\ncd(fileparts(which(bdroot)));\ninitMomentumBasedController;"
+  StopFcn		  "%% stop the simulation\ncd(fileparts(which(bdroot)));\nstopMomentumBasedController;"
+  LastSavedArchitecture	  "maci64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [1912.0, -47.0, 1280.0, 875.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[59]
+	Minimized		"On"
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		51
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1205.0, 640.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-1147.5, -264.0]
+	  SceneRectInView	  [-1147.5, -264.0, 1205.0, 640.0]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  IsTabbed		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "293"
+	  Extents		  [1212.0, 985.0]
+	  ZoomFactor		  [0.6]
+	  Offset		  [1568.3946065449836, -504.41216946043971]
+	  SceneRectInView	  [1568.3946065449836, -504.41216946043971, 2020.0, 1641.6666666666667]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "448"
+	  Extents		  [1212.0, 985.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [618.27568217913313, -613.43333333333385]
+	  SceneRectInView	  [618.27568217913313, -613.43333333333385, 1515.0, 1231.25]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "342"
+	  Extents		  [1212.0, 1199.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [9.1855829963819815, -332.82823010139452]
+	  SceneRectInView	  [9.1855829963819815, -332.82823010139452, 1515.0, 1498.75]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "342:354"
+	  Extents		  [1212.0, 985.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-302.57369791666656, 240.80000000000013]
+	  SceneRectInView	  [-302.57369791666656, 240.80000000000013, 808.0, 656.66666666666663]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "568:436"
+	  Extents		  [1318.0, 548.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-160.28515625, -65.25]
+	  SceneRectInView	  [-160.28515625, -65.25, 659.0, 274.0]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "568"
+	  Extents		  [1318.0, 548.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-610.64062500000011, 50.666666666666742]
+	  SceneRectInView	  [-610.64062500000011, 50.666666666666742, 1318.0, 548.0]
+	}
+	Object {
+	  $ObjectID		  12
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "568:427"
+	  Extents		  [1318.0, 548.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-381.13229166666662, -147.23571428571429]
+	  SceneRectInView	  [-381.13229166666662, -147.23571428571429, 878.66666666666663, 365.33333333333331]
+	}
+	Object {
+	  $ObjectID		  13
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "443"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.1842650485512607]
+	  Offset		  [-610.93472783068012, 42.373567861426352]
+	  SceneRectInView	  [-610.93472783068012, 42.373567861426352, 1503.0419095602931, 685.6573205409876]
+	}
+	Object {
+	  $ObjectID		  14
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "565"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-867.5, -366.875]
+	  SceneRectInView	  [-867.5, -366.875, 2225.0, 1015.0]
+	}
+	Object {
+	  $ObjectID		  15
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "545"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-880.0, -311.5]
+	  SceneRectInView	  [-880.0, -311.5, 1780.0, 812.0]
+	}
+	Object {
+	  $ObjectID		  16
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "512"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [2.0257966616084979]
+	  Offset		  [-288.97368434546075, -141.11673576432219]
+	  SceneRectInView	  [-288.97368434546075, -141.11673576432219, 878.66666666666663, 400.82996254681643]
+	}
+	Object {
+	  $ObjectID		  17
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "503"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [2.7010622154779971]
+	  Offset		  [-105.37674245098674, -21.785207454916275]
+	  SceneRectInView	  [-105.37674245098674, -21.785207454916275, 659.0, 300.62247191011232]
+	}
+	Object {
+	  $ObjectID		  18
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "499"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-446.12711356458351, 71.274663055821918]
+	  SceneRectInView	  [-446.12711356458351, 71.274663055821918, 1186.6666666666667, 541.33333333333337]
+	}
+	Object {
+	  $ObjectID		  19
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "485"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-85.37109375, -238.8]
+	  SceneRectInView	  [-85.37109375, -238.8, 1424.0, 649.6]
+	}
+	Object {
+	  $ObjectID		  20
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "523"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [3.0]
+	  Offset		  [-182.32719925298233, -57.893164794007475]
+	  SceneRectInView	  [-182.32719925298233, -57.893164794007475, 593.33333333333337, 270.66666666666669]
+	}
+	Object {
+	  $ObjectID		  21
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "460"
+	  Extents		  [1318.0, 548.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-649.0, -179.5]
+	  SceneRectInView	  [-649.0, -179.5, 1318.0, 548.0]
+	}
+	Object {
+	  $ObjectID		  22
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "109"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-493.13300180537715, -297.3633437043361]
+	  SceneRectInView	  [-493.13300180537715, -297.3633437043361, 1424.0, 649.6]
+	}
+	Object {
+	  $ObjectID		  23
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "14"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.2797633223510705]
+	  Offset		  [-365.84740947242574, -132.0999778555032]
+	  SceneRectInView	  [-365.84740947242574, -132.0999778555032, 1390.8821802534064, 634.49232043020561]
+	}
+	Object {
+	  $ObjectID		  24
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "448:355"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-476.04036458333337, 349.03783063888528]
+	  SceneRectInView	  [-476.04036458333337, 349.03783063888528, 1186.6666666666667, 541.33333333333337]
+	}
+	Object {
+	  $ObjectID		  25
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "448:355:341"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [3.0]
+	  Offset		  [-196.19379746510668, -49.906732348111646]
+	  SceneRectInView	  [-196.19379746510668, -49.906732348111646, 593.33333333333337, 270.66666666666669]
+	}
+	Object {
+	  $ObjectID		  26
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "2"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.3683680743819908]
+	  Offset		  [-625.40979591836742, -298.70379454253612]
+	  SceneRectInView	  [-625.40979591836742, -298.70379454253612, 1300.8195918367348, 593.40758908507223]
+	}
+	Object {
+	  $ObjectID		  27
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "3"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [2.345773841797699]
+	  Offset		  [-194.40571428571423, -108.57721348314604]
+	  SceneRectInView	  [-194.40571428571423, -108.57721348314604, 758.81142857142845, 346.15442696629208]
+	}
+	Object {
+	  $ObjectID		  28
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "487"
+	  Extents		  [1318.0, 548.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-344.2109375, -148.5]
+	  SceneRectInView	  [-344.2109375, -148.5, 1318.0, 548.0]
+	}
+	Object {
+	  $ObjectID		  29
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "342:57"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-476.04036458333337, -19.166666666666686]
+	  SceneRectInView	  [-476.04036458333337, -19.166666666666686, 1186.6666666666667, 541.33333333333337]
+	}
+	Object {
+	  $ObjectID		  30
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "470"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-644.666666666667, -301.66666666666686]
+	  SceneRectInView	  [-644.666666666667, -301.66666666666686, 1780.0, 812.0]
+	}
+	Object {
+	  $ObjectID		  31
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "324"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-692.15600775193809, -25.205426356589214]
+	  SceneRectInView	  [-692.15600775193809, -25.205426356589214, 1186.6666666666667, 541.33333333333337]
+	}
+	Object {
+	  $ObjectID		  32
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "447"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-628.0703125, -290.0]
+	  SceneRectInView	  [-628.0703125, -290.0, 1780.0, 812.0]
+	}
+	Object {
+	  $ObjectID		  33
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "467"
+	  Extents		  [1780.0, 812.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-857.8125, -224.0]
+	  SceneRectInView	  [-857.8125, -224.0, 2225.0, 1015.0]
+	}
+	Object {
+	  $ObjectID		  34
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "300"
+	  Extents		  [1584.0, 700.0]
+	  ZoomFactor		  [0.79869454873419055]
+	  Offset		  [-152.95146977260094, -212.17881575374847]
+	  SceneRectInView	  [-152.95146977260094, -212.17881575374847, 1983.2362728785356, 876.43017109531252]
+	}
+	Object {
+	  $ObjectID		  35
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "394"
+	  Extents		  [1584.0, 700.0]
+	  ZoomFactor		  [0.80575539568345322]
+	  Offset		  [-309.6876860119047, -150.16666666666669]
+	  SceneRectInView	  [-309.6876860119047, -150.16666666666669, 1965.8571428571429, 868.75]
+	}
+	Object {
+	  $ObjectID		  36
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "381"
+	  Extents		  [1584.0, 700.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-585.5390625, -178.0]
+	  SceneRectInView	  [-585.5390625, -178.0, 1584.0, 700.0]
+	}
+	Object {
+	  $ObjectID		  37
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "340"
+	  Extents		  [1584.0, 700.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-782.0, -255.5]
+	  SceneRectInView	  [-782.0, -255.5, 1584.0, 700.0]
+	}
+	Object {
+	  $ObjectID		  38
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "429"
+	  Extents		  [1472.0, 601.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-290.2734375, -19.837992526590824]
+	  SceneRectInView	  [-290.2734375, -19.837992526590824, 1840.0, 751.25]
+	}
+	Object {
+	  $ObjectID		  39
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "421"
+	  Extents		  [1472.0, 601.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [969.734375, 388.25]
+	  SceneRectInView	  [969.734375, 388.25, 1840.0, 751.25]
+	}
+	Object {
+	  $ObjectID		  40
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "402"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [1153.7265625, 517.5]
+	  SceneRectInView	  [1153.7265625, 517.5, 1472.0, 695.0]
+	}
+	Object {
+	  $ObjectID		  41
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "391"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-518.87890625, -73.75]
+	  SceneRectInView	  [-518.87890625, -73.75, 1840.0, 868.75]
+	}
+	Object {
+	  $ObjectID		  42
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "342:20"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-393.70703125, -266.5]
+	  SceneRectInView	  [-393.70703125, -266.5, 1472.0, 695.0]
+	}
+	Object {
+	  $ObjectID		  43
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "377"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-584.546875, -203.5]
+	  SceneRectInView	  [-584.546875, -203.5, 1472.0, 695.0]
+	}
+	Object {
+	  $ObjectID		  44
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "375"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-352.74869791666669, -143.83333333333331]
+	  SceneRectInView	  [-352.74869791666669, -143.83333333333331, 981.33333333333337, 463.33333333333331]
+	}
+	Object {
+	  $ObjectID		  45
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "342:186"
+	  Extents		  [1472.0, 695.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-326.08463541666669, -126.33333333333331]
+	  SceneRectInView	  [-326.08463541666669, -126.33333333333331, 981.33333333333337, 463.33333333333331]
+	}
+	Object {
+	  $ObjectID		  46
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "345:20"
+	  Extents		  [1372.0, 636.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-343.70703125, -237.5]
+	  SceneRectInView	  [-343.70703125, -237.5, 1372.0, 636.0]
+	}
+	Object {
+	  $ObjectID		  47
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "345"
+	  Extents		  [1372.0, 636.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-219.3828125, -6.75]
+	  SceneRectInView	  [-219.3828125, -6.75, 1715.0, 795.0]
+	}
+	Object {
+	  $ObjectID		  48
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "338"
+	  Extents		  [1326.0, 741.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-601.68359375, -335.0]
+	  SceneRectInView	  [-601.68359375, -335.0, 1326.0, 741.0]
+	}
+	Object {
+	  $ObjectID		  49
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "340:137"
+	  Extents		  [1326.0, 741.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-645.70703125, -316.0]
+	  SceneRectInView	  [-645.70703125, -316.0, 1326.0, 741.0]
+	}
+	Object {
+	  $ObjectID		  50
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "323"
+	  Extents		  [1643.0, 705.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-206.49609375, -12.400000000000034]
+	  SceneRectInView	  [-206.49609375, -12.400000000000034, 1643.0, 705.0]
+	}
+	Object {
+	  $ObjectID		  51
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "331"
+	  Extents		  [1643.0, 705.0]
+	  ZoomFactor		  [2.5]
+	  Offset		  [-164.4428797468355, -19.77215189873418]
+	  SceneRectInView	  [-164.4428797468355, -19.77215189873418, 657.2, 282.0]
+	}
+	Object {
+	  $ObjectID		  52
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "333"
+	  Extents		  [1643.0, 705.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-260.55259098101271, -104.37974683544309]
+	  SceneRectInView	  [-260.55259098101271, -104.37974683544309, 821.5, 352.5]
+	}
+	Object {
+	  $ObjectID		  53
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "308"
+	  Extents		  [1326.0, 741.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-320.70703125, -291.0]
+	  SceneRectInView	  [-320.70703125, -291.0, 1326.0, 741.0]
+	}
+	Object {
+	  $ObjectID		  54
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "307"
+	  Extents		  [1326.0, 741.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-522.5, -330.0]
+	  SceneRectInView	  [-522.5, -330.0, 1326.0, 741.0]
+	}
+	Object {
+	  $ObjectID		  55
+	  IsActive		  [0]
+	  IsTabbed		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "8"
+	  Extents		  [1546.0, 1006.0]
+	  ZoomFactor		  [6.0]
+	  Offset		  [48.666666666666657, -11.833333333333329]
+	  SceneRectInView	  [48.666666666666657, -11.833333333333329, 257.66666666666669, 167.66666666666666]
+	}
+	PropName		"EditorsInfo"
+      }
+      Array {
+	Type			"Simulink.DockComponentInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  56
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Off"
+	}
+	Object {
+	  $ObjectID		  57
+	  Type			  "Simulink:Editor:ReferencedFiles"
+	  ID			  "Referenced Files"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
+	  Floating		  [0]
+	  DockPosition		  "Left"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Unset"
+	}
+	PropName		"DockComponentsInfo"
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP////sAAABgAFMAaQBtAHUAb"
+      "ABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZ"
+      "QBzAAAAAAD/////AAAAjgD///8AAAABAAAB+gAAA2n8AgAAAAH8AAAAeQAAA2kAAAAAAP////oAAAABAgAAAAL7AAAAVABHAEwAVQBFADIAOgBQA"
+      "HIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA/"
+      "///+wAAAF4ARwBMAFUARQAyADoATgBvAHQAZQBzACAAQgByAG8AdwBzAGUAcgAgAEMAbwBtAHAAbwBuAGUAbgB0AC8AUwB5AHMARABvAGMATQBpA"
+      "HgAZQBkAEUAZABpAHQAbwByAAAAAAD/////AAAAAAAAAAAAAAADAAAE4gAAAND8AQAAAAH7/////wAAAAAA/////wAAAVkA////AAAE2wAAAr0AA"
+      "AABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmA"
+      "HQDAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAa"
+      "AB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0A"
+      "HQAbwBtAAAAAAD/////AAAAAAAAAAA="
+      Array {
+	Type			"Cell"
+	Dimension		0
+	PropName		"PersistedApps"
+      }
+      WindowUuid	      "0b82776b-3568-4091-8b56-551a033ff4d9"
+    }
+    BDUuid		    "0042f8f9-76fc-4298-b746-a905f461996c"
+  }
+  HideAutomaticNames	  on
+  SequenceViewerTimePrecision 3
+  SequenceViewerHistory	  1000
+  Created		  "Wed Jan 20 15:14:05 2021"
+  Creator		  "lorenzorapetti"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "lorenzorapetti"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Mar 03 16:40:56 2022"
+  RTWModifiedTimeStamp	  568226456
+  ModelVersionFormat	  "%<AutoIncrement:2.0>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  VariantCondition	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  on
+  MultiThreadCoSim	  "on"
+  SimulationMode	  "normal"
+  SILPILModeSetting	  "automated"
+  SILPILSystemUnderTest	  "topmodel"
+  SILPILSimulationModeTopModel "normal"
+  SILPILSimulationModeModelRef "normal"
+  SimTabSimulationMode	  "normal"
+  CodeVerificationMode	  "software-in-the-loop (sil)"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    58
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "MomentumBasedController_R2020b"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "MomentumBasedController_R2020b"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigSignalOutputPortIndex 0
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  VariantFading		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      59
+      Version		      "20.1.0"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  60
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  StartTime		  "0.0"
+	  StopTime		  "Config.SIMULATION_TIME"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
+	  FixedStep		  "Config.tStep"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  off
+	  ConcurrentTasks	  off
+	  SolverName		  "FixedStepAuto"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  on
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	  ODENIntegrationMethod	  "ode3"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  61
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveOperatingPoint	  off
+	  SaveFormat		  "Dataset"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  62
+	  Version		  "20.1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Components		  []
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  GainParamInheritBuiltInType off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  BitwiseOrLogicalOp	  "Same as modeled"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "auto"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  UseRowMajorAlgorithm	  off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  LabelGuidedReuse	  off
+	  MultiThreadedLoops	  off
+	  DenormalBehavior	  "GradualUnderflow"
+	  EfficientTunableParamExpr off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  63
+	  Version		  "20.1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Components		  []
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  FcnCallInpInsideContextMsg "error"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceNoExplicitFinalValueMsg	"none"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  OperatingPointInterfaceChecksumMismatchMsg "warning"
+	  NonCurrentReleaseOperatingPointMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "error"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "error"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "warning"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	  DebugExecutionForFMUViaOutOfProcess off
+	  ArithmeticOperatorsInVariantConditions "error"
+	  VariantConditionMismatch "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  64
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  64
+	  ProdBitPerSizeT	  64
+	  ProdBitPerPtrDiffT	  64
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "Float"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  64
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Intel->x86-64 (Windows64)"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  65
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel on
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  66
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  on
+	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
+	  SimDebugExecutionForCustomCode off
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	  CustomCodeUndefinedFunction "FilterOut"
+	  CustomCodeGlobalsAsFunctionIO	off
+	  SimTargetLang		  "C"
+	  GPUAcceleration	  off
+	  SimGPUMallocThreshold	  200
+	  SimGPUStackLimitPerThread 1024
+	  SimGPUErrorChecks	  off
+	  SimGPUCustomComputeCapability	""
+	  SimGPUCompilerFlags	  ""
+	  SimDLTargetLibrary	  "mkl-dnn"
+	  SimDLAutoTuning	  on
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  67
+	  Version		  "20.1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    17
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "CodeStackProfiling"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  ShowCustomHardwareApp	  off
+	  ShowEmbeddedHardwareApp off
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  GenerateReport	  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  on
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation "off"
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  GenerateGPUCode	  "None"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  GPUKernelNamePrefix	  ""
+	  GPUDeviceID		  -1
+	  GPUMallocMode		  "discrete"
+	  GPUMallocThreshold	  200
+	  GPUStackLimitPerThread  1024
+	  GPUcuBLAS		  on
+	  GPUcuSOLVER		  on
+	  GPUcuFFT		  on
+	  GPUErrorChecks	  off
+	  GPUComputeCapability	  "3.5"
+	  GPUCustomComputeCapability ""
+	  GPUCompilerFlags	  ""
+	  DLTargetLibrary	  "none"
+	  DLAutoTuning		  on
+	  DLArmComputeVersion	  "19.05"
+	  DLArmComputeArch	  "unspecified"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      68
+	      Version		      "20.1.0"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"BlockCommentType"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Components	      []
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments off
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	      EnumMemberNameClash     "error"
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      69
+	      Version		      "20.1.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"ExistingSharedCode"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		Cell			"ParenthesesLevel"
+		Cell			"ERTMultiwordTypeDef"
+		Cell			"MultiwordTypeDef"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Components	      []
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C99 (ISO)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  70
+	  Version		  "20.1.0"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Components		  []
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dwe"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar off
+	  CovSaveSingleToWorkspaceVar off
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  on
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 72, 34, 972, 744 ]
+      ExtraOptions	      ""
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    59
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    71
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NameLocation	    "bottom"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "left"
+    VerticalAlignment	    "top"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Assertion
+      Enabled		      on
+      StopWhenAssertionFail   on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      BusCreator
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+      DisallowConstTsAndPrmTs off
+      PortDimensions	      "1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "double"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "0"
+      Interpolate	      on
+      ZeroCross		      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected on
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      ScheduleAs	      "Sample time"
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      MatchGraphicalInterface off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      VariantControlMode      "expression"
+      VariantActivationTime   "update diagram"
+      AllowZeroVariantControls off
+      PropagateVariantConditions off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+      IsInjectorSS	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "round"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      off
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SaveFormat	      "Array"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      off
+      NumInputs		      "1"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      UnitDelay
+      InitialCondition	      "0"
+      InputProcessing	      "Elements as channels (sample based)"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      HasFrameUpgradeWarning  off
+    }
+  }
+  System {
+    Name		    "MomentumBasedController_R2020b"
+    Location		    [1912, -47, 3192, 828]
+    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+    Open		    off
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "570"
+    SimulinkSubDomain	    "Simulink"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Controller"
+      SID		      "293"
+      Ports		      []
+      Position		      [-505, -135, -315, 25]
+      ZOrder		      1120
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		72
+	$ClassName		"Simulink.Mask"
+	RunInitForIconRedraw	"off"
+      }
+      System {
+	Name			"Controller"
+	Location		[8, 33, 1288, 1473]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"60"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Add Equality Constraints"
+	  SID			  "487"
+	  Ports			  [2, 2]
+	  Position		  [2375, 108, 2480, 217]
+	  ZOrder		  1264
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Add Equality Constraints"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  Aeq_add		  "ConfigRobot1.wrench_Aeq_const "
+	  beq_add		  "ConfigRobot1.wrench_beq_const"
+	}
+	Block {
+	  BlockType		  Assertion
+	  Name			  "Assertion"
+	  SID			  "534"
+	  Position		  [3150, 562, 3210, 608]
+	  ZOrder		  1270
+	  HideAutomaticName	  off
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  "569"
+	  Ports			  [3, 1]
+	  Position		  [860, -274, 865, -236]
+	  ZOrder		  1307
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	  InheritFromInputs	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Configuration"
+	  SID			  "306"
+	  Ports			  []
+	  Position		  [285, 55, 360, 85]
+	  ZOrder		  96
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/Utilities/Configuration"
+	  SourceType		  ""
+	  SourceProductName	  "WholeBodyToolbox"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  ConfigSource		  "Workspace"
+	  ConfigObject		  "'WBTConfigRobot_1'"
+	  RobotName		  "'icubSim'"
+	  UrdfFile		  "'model.urdf'"
+	  ControlledJoints	  "{'l_elbow','l_shoulder_pitch','torso_roll'}"
+	  ControlBoardsNames	  "{'left_arm','right_arm','torso'}"
+	  LocalName		  "'WBT'"
+	  GravityVector		  "[0,0,-9.81]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Force Ergonomy Optimization"
+	  SID			  "485"
+	  Ports			  [6, 4]
+	  Position		  [2730, 92, 2945, 553]
+	  ZOrder		  1262
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Force Ergonomy Optimization"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  InvTol		  "ConfigRobot1.Reg.AInvTol"
+	  regularizationHessian	  "ConfigRobot1.Reg.Hessian"
+	  minimizationWeight	  "ConfigRobot1.Gains.tauMinimization"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From"
+	  SID			  "451"
+	  Position		  [1185, -254, 1270, -226]
+	  ZOrder		  1245
+	  GotoTag		  "yarp_time"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Get Model State and Dynamics"
+	  SID			  "342"
+	  Ports			  [3, 4]
+	  Position		  [605, 106, 865, 384]
+	  ZOrder		  944
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Get Model State and Dynamics"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  nDoF			  "ConfigRobot1.ROBOT_DOF"
+	  regularization	  "0.001"
+	  contactFrame1Name	  "ConfigRobot1.Frames.LEFT_FOOT"
+	  contactFrame2Name	  "ConfigRobot1.Frames.RIGHT_FOOT"
+	  frame1		  "ConfigRobot1.Frames.LEFT_FOOT"
+	  frame2		  "ConfigRobot1.Frames.RIGHT_FOOT"
+	  frame3		  "ConfigRobot1.Frames.LEFT_HAND"
+	  frame4		  "ConfigRobot1.Frames.RIGHT_HAND"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "GetMeasurement"
+	  SID			  "309"
+	  Ports			  [0, 1]
+	  Position		  [370, 228, 465, 262]
+	  ZOrder		  921
+	  BackgroundColor	  "[0.513700, 0.851000, 0.670600]"
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/States/GetMeasurement"
+	  SourceType		  "GetMeasurement"
+	  SourceProductName	  "WholeBodyToolbox"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  measuredType		  "Joints Position"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "GetMeasurement1"
+	  SID			  "314"
+	  Ports			  [0, 1]
+	  Position		  [370, 318, 465, 352]
+	  ZOrder		  928
+	  BackgroundColor	  "[0.513700, 0.674500, 1.000000]"
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/States/GetMeasurement"
+	  SourceType		  "GetMeasurement"
+	  SourceProductName	  "WholeBodyToolbox"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  measuredType		  "Joints Velocity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "GetMeasurement2"
+	  SID			  "541"
+	  Ports			  [0, 1]
+	  Position		  [340, 488, 435, 522]
+	  ZOrder		  1277
+	  BackgroundColor	  "[0.827500, 0.576500, 0.603900]"
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/States/GetMeasurement"
+	  SourceType		  "GetMeasurement"
+	  SourceProductName	  "WholeBodyToolbox"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  measuredType		  "Joints Torque"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IdentityTransform1"
+	  SID			  "326"
+	  Position		  [730, 556, 820, 584]
+	  ZOrder		  935
+	  ShowName		  off
+	  Value			  "zeros(ConfigRobot1.ROBOT_DOF,1)"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IdentityTransform2"
+	  SID			  "356"
+	  Position		  [370, 141, 460, 169]
+	  ZOrder		  957
+	  ShowName		  off
+	  Value			  "ConfigRobot1.w_H_base"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IdentityTransform3"
+	  SID			  "445"
+	  Position		  [1630, 451, 1720, 479]
+	  ZOrder		  1036
+	  ShowName		  off
+	  Value			  "ConfigRobot1.ConstraintsMatrix"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IdentityTransform4"
+	  SID			  "446"
+	  Position		  [1630, 546, 1720, 574]
+	  ZOrder		  1037
+	  ShowName		  off
+	  Value			  "ConfigRobot1.bVectorConstraints"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Initial State Holder"
+	  SID			  "467"
+	  Ports			  [1, 1]
+	  Position		  [1145, -535, 1315, -435]
+	  ZOrder		  1258
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    73
+	    $ClassName		    "Simulink.Mask"
+	    RunInitForIconRedraw    "off"
+	  }
+	  System {
+	    Name		    "Initial State Holder"
+	    Location		    [1992, 27, 3840, 1080]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "80"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "state"
+	      SID		      "468"
+	      Position		      [-95, 68, -65, 82]
+	      ZOrder		      1258
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "State Bus Deserializer"
+	      SID		      "462"
+	      Ports		      [1, 4]
+	      Position		      [75, 18, 200, 127]
+	      ZOrder		      1253
+	      LibraryVersion	      "4.9"
+	      SourceBlock	      "RobotStateLibrary/State Bus Deserializer"
+	      SourceType	      ""
+	      SourceProductName	      "robot-state-library"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      VariantActivationTime   "update diagram"
+	      AllowZeroVariantControls off
+	      PropagateVariantConditions off
+	      ContentPreviewEnabled   on
+	      Latency		      "0"
+	      AutoFrameSizeCalculation off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "State Bus Serializer"
+	      SID		      "461"
+	      Ports		      [4, 1]
+	      Position		      [350, 23, 465, 122]
+	      ZOrder		      1252
+	      LibraryVersion	      "4.9"
+	      SourceBlock	      "RobotStateLibrary/State Bus Serializer"
+	      SourceType	      ""
+	      SourceProductName	      "robot-state-library"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      VariantActivationTime   "update diagram"
+	      AllowZeroVariantControls off
+	      PropagateVariantConditions off
+	      ContentPreviewEnabled   on
+	      Latency		      "0"
+	      AutoFrameSizeCalculation off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "holder\n"
+	      SID		      "463"
+	      Ports		      [1, 1]
+	      Position		      [245, 24, 300, 46]
+	      ZOrder		      1254
+	      BackgroundColor	      "[0.537255, 0.721569, 1.000000]"
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/holder\n"
+	      SourceType	      "Holder"
+	      SourceProductName	      "WholeBodyToolbox"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "holder\n1"
+	      SID		      "464"
+	      Ports		      [1, 1]
+	      Position		      [245, 49, 300, 71]
+	      ZOrder		      1255
+	      BackgroundColor	      "[0.537255, 0.721569, 1.000000]"
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/holder\n"
+	      SourceType	      "Holder"
+	      SourceProductName	      "WholeBodyToolbox"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "holder\n2"
+	      SID		      "465"
+	      Ports		      [1, 1]
+	      Position		      [245, 74, 300, 96]
+	      ZOrder		      1256
+	      BackgroundColor	      "[0.537255, 0.721569, 1.000000]"
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/holder\n"
+	      SourceType	      "Holder"
+	      SourceProductName	      "WholeBodyToolbox"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "holder\n3"
+	      SID		      "466"
+	      Ports		      [1, 1]
+	      Position		      [245, 99, 300, 121]
+	      ZOrder		      1257
+	      BackgroundColor	      "[0.537255, 0.721569, 1.000000]"
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/holder\n"
+	      SourceType	      "Holder"
+	      SourceProductName	      "WholeBodyToolbox"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "state0"
+	      SID		      "469"
+	      Position		      [570, 68, 600, 82]
+	      ZOrder		      1259
+	    }
+	    Line {
+	      ZOrder		      218
+	      SrcBlock		      "State Bus Deserializer"
+	      SrcPort		      2
+	      DstBlock		      "holder\n1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      222
+	      SrcBlock		      "State Bus Deserializer"
+	      SrcPort		      4
+	      DstBlock		      "holder\n3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      217
+	      SrcBlock		      "holder\n1"
+	      SrcPort		      1
+	      DstBlock		      "State Bus Serializer"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      221
+	      SrcBlock		      "holder\n3"
+	      SrcPort		      1
+	      DstBlock		      "State Bus Serializer"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      215
+	      SrcBlock		      "State Bus Deserializer"
+	      SrcPort		      1
+	      DstBlock		      "holder\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      224
+	      SrcBlock		      "state"
+	      SrcPort		      1
+	      DstBlock		      "State Bus Deserializer"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      220
+	      SrcBlock		      "holder\n2"
+	      SrcPort		      1
+	      DstBlock		      "State Bus Serializer"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      225
+	      SrcBlock		      "State Bus Serializer"
+	      SrcPort		      1
+	      DstBlock		      "state0"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      216
+	      SrcBlock		      "holder\n"
+	      SrcPort		      1
+	      DstBlock		      "State Bus Serializer"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      219
+	      SrcBlock		      "State Bus Deserializer"
+	      SrcPort		      3
+	      DstBlock		      "holder\n2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Inverse Dynamics"
+	  SID			  "447"
+	  Ports			  [4, 3]
+	  Position		  [1885, 649, 2050, 1131]
+	  ZOrder		  1038
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Inverse Dynamics"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  Reg			  "ConfigRobot1.Reg"
+	  fixedLinkVelcityComponents "ConfigRobot1.fixedLinkVelcityComponents"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Momentum Controller"
+	  SID			  "443"
+	  Ports			  [7, 4]
+	  Position		  [1785, -62, 2050, 612]
+	  ZOrder		  1034
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Momentum Controller"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  GainMomentum		  "ConfigRobot1.Gains.GainMomentum"
+	  linksUseConstraintMatrix "ConfigRobot1.linksUseConstraintMatrix"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "NOT"
+	  SID			  "536"
+	  Ports			  [1, 1]
+	  Position		  [3009, 525, 3041, 555]
+	  ZOrder		  1272
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NameLocation		  "left"
+	  Operator		  "NOT"
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Postural Task Controller"
+	  SID			  "324"
+	  Ports			  [4, 2]
+	  Position		  [1165, 133, 1430, 632]
+	  ZOrder		  933
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/Postural Task Controller"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  GainPostural		  "ConfigRobot1.Gains.GainPostural"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  SID			  "497"
+	  Ports			  [1]
+	  Position		  [3095, 464, 3125, 496]
+	  ZOrder		  1266
+	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
+	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
+	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
+	  "erializedDisplays',{struct('MinYLimReal','-2.375','MaxYLimReal','1.375','YLabelReal','','MinYLimMag','0.00000','Max"
+	  "YLimMag','2.375','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesT"
+	  "ickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039"
+	  "215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215"
+	  "686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%"
+	  "<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Force Ergonomy"
+	  " Optimization/3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-2.375','MaxY"
+	  "LimReal','1.375','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','2.375','LegendVisibility','off','XGrid',true,"
+	  "'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274"
+	  "509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.06666666"
+	  "66666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.05882352941"
+	  "17647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'PreviousAu"
+	  "toscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2"
+	  "021b')"
+	  NumInputPorts		  "1"
+	  Floating		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Selector Matrix"
+	  SID			  "496"
+	  Position		  [1505, 1055, 1600, 1085]
+	  ZOrder		  1265
+	  Value			  "[zeros(6,ConfigRobot1.ROBOT_DOF); eye(ConfigRobot1.ROBOT_DOF)]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "SetReferences"
+	  SID			  "484"
+	  Ports			  [1]
+	  Position		  [3330, 145, 3405, 195]
+	  ZOrder		  1261
+	  BackgroundColor	  "[0.827500, 0.576500, 0.603900]"
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/Actuators/SetReferences"
+	  SourceType		  "SetReferences"
+	  SourceProductName	  "WholeBodyToolbox"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  controlType		  "Torque"
+	  refSpeed		  "10*(pi/180)"
+	  refAcceleration	  "1000000*(pi/180)"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Yarp Publisher"
+	  SID			  "340"
+	  Ports			  [1]
+	  Position		  [1105, 10, 1165, 70]
+	  ZOrder		  943
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Yarp Publisher"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  basePosePortName	  "'/collaborativeController/robot1/basePose:o'"
+	  jointPosPortName	  "'/collaborativeController/robot1/jointPosition:o'"
+	  nuPortName		  "'/collaborativeController/robot1/stateVelocity:o'"
+	  posCoMPortName	  "'/collaborativeController/robot1/CoMPosition:o'"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Yarp Publisher1"
+	  SID			  "460"
+	  Ports			  [1]
+	  Position		  [1940, -230, 2000, -170]
+	  ZOrder		  1250
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Yarp Publisher"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  basePosePortName	  "'/collaborativeController/robotRef/basePose:o'"
+	  jointPosPortName	  "'/collaborativeController/robotRef/jointPosition:o'"
+	  nuPortName		  "'/collaborativeController/robotRef/stateVelocity:o'"
+	  posCoMPortName	  "'/collaborativeController/robotRef/CoMPosition:o'"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State-Machine Reference Generator"
+	  SID			  "448"
+	  Ports			  [3, 6]
+	  Position		  [1375, -319, 1590, -156]
+	  ZOrder		  1039
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  LinkData {
+	    BlockName		    "CoM6D -> \nCoMXYZ2"
+	    DialogParameters {
+	      NumberOfDimensions      "1"
+	      InputPortWidth	      "6"
+	    }
+	    BlockName		    "CoM6D -> \nCoMXYZ5"
+	    DialogParameters {
+	      NumberOfDimensions      "1"
+	      InputPortWidth	      "-1"
+	    }
+	  }
+	  SourceBlock		  "RobotStateLibrary/State-Machine Reference Generator"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  configStateMachine	  "ConfigRobot1.StateMachine"
+	  sampleTime		  "Config.tStep"
+	  frameName1		  "ConfigRobot1.Frames.LEFT_FOOT"
+	  frameName2		  "ConfigRobot1.Frames.RIGHT_FOOT"
+	  regularization	  "0.001"
+	  nDoF			  "ConfigRobot1.ROBOT_DOF"
+	  frame1		  "ConfigRobot1.Frames.LEFT_FOOT"
+	  frame2		  "ConfigRobot1.Frames.RIGHT_FOOT"
+	  frame3		  "ConfigRobot1.Frames.LEFT_HAND"
+	  frame4		  "ConfigRobot1.Frames.RIGHT_HAND"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  SID			  "537"
+	  Ports			  [1]
+	  Position		  [1850, -340, 1940, -310]
+	  ZOrder		  1273
+	  VariableName		  "stateDes"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  SID			  "538"
+	  Ports			  [1]
+	  Position		  [1125, -330, 1215, -300]
+	  ZOrder		  1274
+	  VariableName		  "stateMeas"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace2"
+	  SID			  "539"
+	  Ports			  [1]
+	  Position		  [3280, 65, 3370, 95]
+	  ZOrder		  1275
+	  VariableName		  "tauDes"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace3"
+	  SID			  "540"
+	  Ports			  [1]
+	  Position		  [3280, 375, 3370, 405]
+	  ZOrder		  1276
+	  VariableName		  "wrenchDes"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace4"
+	  SID			  "542"
+	  Ports			  [1]
+	  Position		  [485, 490, 575, 520]
+	  ZOrder		  1278
+	  VariableName		  "tauMeas"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace5"
+	  SID			  "566"
+	  Ports			  [1]
+	  Position		  [3035, 745, 3125, 775]
+	  ZOrder		  1279
+	  VariableName		  "qpState"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace6"
+	  SID			  "567"
+	  Ports			  [1]
+	  Position		  [1745, -175, 1835, -145]
+	  ZOrder		  1280
+	  VariableName		  "stateMachineState"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace7"
+	  SID			  "570"
+	  Ports			  [1]
+	  Position		  [905, -270, 995, -240]
+	  ZOrder		  1308
+	  VariableName		  "emergencyStop"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Timeseries"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Torque Saturation"
+	  SID			  "498"
+	  Position		  [3085, 142, 3135, 198]
+	  ZOrder		  1267
+	  UpperLimit		  "ConfigRobot1.Safety.torqueSaturation"
+	  LowerLimit		  "-ConfigRobot1.Safety.torqueSaturation"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  SID			  "535"
+	  Position		  [3055, 573, 3075, 597]
+	  ZOrder		  1271
+	  ShowName		  off
+	  HideAutomaticName	  off
+	  InitialCondition	  "1"
+	  SampleTime		  "Config.tStep"
+	  HasFrameUpgradeWarning  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "emergency stop: joint limits1"
+	  SID			  "568"
+	  Ports			  [2, 3]
+	  Position		  [675, -270, 800, -240]
+	  ZOrder		  1306
+	  BackgroundColor	  "red"
+	  ShowName		  off
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/emergency stop: joint limits"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  Safety		  " ConfigRobot1.Safety"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "joint position"
+	  SID			  "520"
+	  Ports			  [1]
+	  Position		  [3085, 306, 3200, 344]
+	  ZOrder		  1269
+	  ForegroundColor	  "[0.490196, 0.000000, 0.000000]"
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/Utilities/YarpWrite"
+	  SourceType		  "YARP Write"
+	  SourceProductName	  "WholeBodyToolbox"
+	  MultiThreadCoSim	  "auto"
+	  portName		  "'/collaborativeController/robotRef/wrench:o'"
+	  autoconnect		  off
+	  errorOnConnection	  on
+	}
+	Line {
+	  ZOrder		  74
+	  SrcBlock		  "IdentityTransform1"
+	  SrcPort		  1
+	  DstBlock		  "Postural Task Controller"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  27
+	  SrcBlock		  "GetMeasurement"
+	  SrcPort		  1
+	  Points		  [54, 0]
+	  Branch {
+	    ZOrder		    448
+	    Points		    [0, -505]
+	    DstBlock		    "emergency stop: joint limits1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    322
+	    DstBlock		    "Get Model State and Dynamics"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  75
+	  SrcBlock		  "GetMeasurement1"
+	  SrcPort		  1
+	  DstBlock		  "Get Model State and Dynamics"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  90
+	  SrcBlock		  "IdentityTransform2"
+	  SrcPort		  1
+	  Points		  [125, 0]
+	  Branch {
+	    ZOrder		    226
+	    Points		    [14, 0; 0, -335]
+	    DstBlock		    "State-Machine Reference Generator"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    180
+	    DstBlock		    "Get Model State and Dynamics"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  103
+	  SrcBlock		  "Get Model State and Dynamics"
+	  SrcPort		  3
+	  Points		  [124, 0]
+	  Branch {
+	    ZOrder		    105
+	    Points		    [0, -290]
+	    DstBlock		    "Momentum Controller"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    104
+	    Points		    [6, 0]
+	  }
+	}
+	Line {
+	  ZOrder		  179
+	  SrcBlock		  "State-Machine Reference Generator"
+	  SrcPort		  3
+	  Points		  [87, 0; 0, 430]
+	  DstBlock		  "Momentum Controller"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  116
+	  SrcBlock		  "IdentityTransform3"
+	  SrcPort		  1
+	  DstBlock		  "Momentum Controller"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  117
+	  SrcBlock		  "IdentityTransform4"
+	  SrcPort		  1
+	  DstBlock		  "Momentum Controller"
+	  DstPort		  7
+	}
+	Line {
+	  ZOrder		  264
+	  SrcBlock		  "Postural Task Controller"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 450]
+	  DstBlock		  "Inverse Dynamics"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  265
+	  SrcBlock		  "Postural Task Controller"
+	  SrcPort		  2
+	  Points		  [8, 0; 0, 320]
+	  DstBlock		  "Inverse Dynamics"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  155
+	  SrcBlock		  "From"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "State-Machine Reference Generator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  160
+	  SrcBlock		  "State-Machine Reference Generator"
+	  SrcPort		  1
+	  Points		  [19, 0; 0, 379; -473, 0; 0, 366]
+	  DstBlock		  "Postural Task Controller"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  207
+	  SrcBlock		  "State-Machine Reference Generator"
+	  SrcPort		  5
+	  Points		  [194, 0]
+	  Branch {
+	    ZOrder		    385
+	    Points		    [0, -125]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    384
+	    DstBlock		    "State Yarp Publisher1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  79
+	  SrcBlock		  "Get Model State and Dynamics"
+	  SrcPort		  1
+	  Points		  [195, 0]
+	  Branch {
+	    ZOrder		    83
+	    Points		    [0, 55]
+	    DstBlock		    "Postural Task Controller"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    82
+	    Points		    [0, -55]
+	    Branch {
+	      ZOrder		      107
+	      DstBlock		      "Momentum Controller"
+	      DstPort		      2
+	    }
+	    Branch {
+	      ZOrder		      106
+	      Points		      [0, -45]
+	      Branch {
+		ZOrder			92
+		Points			[0, -355]
+		Branch {
+		  ZOrder		  387
+		  DstBlock		  "To Workspace1"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  386
+		  Points		  [0, -170]
+		  DstBlock		  "Initial State Holder"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			91
+		DstBlock		"State Yarp Publisher"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  225
+	  SrcBlock		  "Initial State Holder"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 195]
+	  DstBlock		  "State-Machine Reference Generator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  299
+	  SrcBlock		  "Get Model State and Dynamics"
+	  SrcPort		  4
+	  Points		  [66, 0; 0, 155; 128, 0; 0, 135; 399, 0; 0, -365]
+	  DstBlock		  "Momentum Controller"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  297
+	  SrcBlock		  "Get Model State and Dynamics"
+	  SrcPort		  2
+	  Points		  [233, 0]
+	  Branch {
+	    ZOrder		    298
+	    Points		    [0, 110]
+	    Branch {
+	      ZOrder		      244
+	      Points		      [0, 630]
+	      DstBlock		      "Inverse Dynamics"
+	      DstPort		      3
+	    }
+	    Branch {
+	      ZOrder		      236
+	      DstBlock		      "Postural Task Controller"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    ZOrder		    241
+	    Points		    [0, -101; 650, 0; 0, 261]
+	    DstBlock		    "Momentum Controller"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  ZOrder		  269
+	  SrcBlock		  "Momentum Controller"
+	  SrcPort		  3
+	  Points		  [110, 0; 0, -75]
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  270
+	  SrcBlock		  "Momentum Controller"
+	  SrcPort		  4
+	  Points		  [118, 0; 0, -170]
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  271
+	  SrcBlock		  "Inverse Dynamics"
+	  SrcPort		  1
+	  Points		  [162, 0; 0, -295]
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  272
+	  SrcBlock		  "Inverse Dynamics"
+	  SrcPort		  2
+	  Points		  [150, 0; 0, -380]
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  300
+	  SrcBlock		  "Momentum Controller"
+	  SrcPort		  1
+	  Points		  [158, 0; 0, 115]
+	  DstBlock		  "Add Equality Constraints"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  301
+	  SrcBlock		  "Add Equality Constraints"
+	  SrcPort		  1
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  302
+	  SrcBlock		  "Momentum Controller"
+	  SrcPort		  2
+	  DstBlock		  "Add Equality Constraints"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  303
+	  SrcBlock		  "Add Equality Constraints"
+	  SrcPort		  2
+	  Points		  [120, 0; 0, 20]
+	  DstBlock		  "Force Ergonomy Optimization"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  318
+	  SrcBlock		  "Selector Matrix"
+	  SrcPort		  1
+	  DstBlock		  "Inverse Dynamics"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  320
+	  SrcBlock		  "Force Ergonomy Optimization"
+	  SrcPort		  1
+	  Points		  [0, 20; 50, 0]
+	  Branch {
+	    ZOrder		    447
+	    Points		    [0, -239; -2349, 0; 0, -176]
+	    DstBlock		    "emergency stop: joint limits1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    445
+	    DstBlock		    "Torque Saturation"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  321
+	  SrcBlock		  "Torque Saturation"
+	  SrcPort		  1
+	  Points		  [79, 0]
+	  Branch {
+	    ZOrder		    389
+	    Points		    [0, -90]
+	    DstBlock		    "To Workspace2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    388
+	    DstBlock		    "SetReferences"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  372
+	  SrcBlock		  "Force Ergonomy Optimization"
+	  SrcPort		  3
+	  Points		  [0, 100; 25, 0]
+	  Branch {
+	    ZOrder		    434
+	    Points		    [0, 280]
+	    DstBlock		    "To Workspace5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    433
+	    Points		    [50, 0]
+	    Branch {
+	      ZOrder		      382
+	      DstBlock		      "NOT"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      381
+	      DstBlock		      "Scope"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  373
+	  SrcBlock		  "Force Ergonomy Optimization"
+	  SrcPort		  2
+	  Points		  [0, 60; 108, 0]
+	  Branch {
+	    ZOrder		    391
+	    Points		    [0, 65]
+	    DstBlock		    "To Workspace3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    390
+	    DstBlock		    "joint position"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  380
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  DstBlock		  "Assertion"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  383
+	  SrcBlock		  "NOT"
+	  SrcPort		  1
+	  Points		  [0, 25]
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  392
+	  SrcBlock		  "GetMeasurement2"
+	  SrcPort		  1
+	  DstBlock		  "To Workspace4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  436
+	  SrcBlock		  "State-Machine Reference Generator"
+	  SrcPort		  4
+	  Points		  [7, 0; 0, 65]
+	  DstBlock		  "To Workspace6"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  449
+	  SrcBlock		  "emergency stop: joint limits1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  450
+	  SrcBlock		  "emergency stop: joint limits1"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  451
+	  SrcBlock		  "emergency stop: joint limits1"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  452
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "To Workspace7"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Data Playback"
+      SID		      "565"
+      Ports		      []
+      Position		      [-505, 105, -315, 265]
+      ZOrder		      1271
+      Commented		      "on"
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		74
+	$ClassName		"Simulink.Mask"
+	RunInitForIconRedraw	"off"
+      }
+      System {
+	Name			"Data Playback"
+	Location		[72, 27, 1920, 1080]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"80"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace"
+	  SID			  "543"
+	  Position		  [20, 23, 85, 47]
+	  ZOrder		  1121
+	  VariableName		  "out.stateDes.w_H_base"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace1"
+	  SID			  "549"
+	  Position		  [20, 73, 85, 97]
+	  ZOrder		  1255
+	  VariableName		  "out.stateDes.nu"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace2"
+	  SID			  "548"
+	  Position		  [20, 48, 85, 72]
+	  ZOrder		  1254
+	  VariableName		  "out.stateDes.jointPos"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace3"
+	  SID			  "550"
+	  Position		  [20, 98, 85, 122]
+	  ZOrder		  1256
+	  VariableName		  "out.stateDes.pos_CoM"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace4"
+	  SID			  "559"
+	  Position		  [20, 158, 85, 182]
+	  ZOrder		  1265
+	  VariableName		  "out.stateMeas.w_H_base"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace5"
+	  SID			  "560"
+	  Position		  [20, 208, 85, 232]
+	  ZOrder		  1267
+	  VariableName		  "out.stateMeas.nu"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace6"
+	  SID			  "561"
+	  Position		  [20, 183, 85, 207]
+	  ZOrder		  1266
+	  VariableName		  "out.stateMeas.jointPos"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace7"
+	  SID			  "562"
+	  Position		  [20, 233, 85, 257]
+	  ZOrder		  1268
+	  VariableName		  "out.stateMeas.pos_CoM"
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Bus Serializer"
+	  SID			  "551"
+	  Ports			  [4, 1]
+	  Position		  [190, 23, 305, 122]
+	  ZOrder		  1257
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Bus Serializer"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  VariantActivationTime	  "update diagram"
+	  AllowZeroVariantControls off
+	  PropagateVariantConditions off
+	  ContentPreviewEnabled	  on
+	  Latency		  "0"
+	  AutoFrameSizeCalculation off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Bus Serializer1"
+	  SID			  "563"
+	  Ports			  [4, 1]
+	  Position		  [190, 158, 305, 257]
+	  ZOrder		  1269
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Bus Serializer"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  VariantActivationTime	  "update diagram"
+	  AllowZeroVariantControls off
+	  PropagateVariantConditions off
+	  ContentPreviewEnabled	  on
+	  Latency		  "0"
+	  AutoFrameSizeCalculation off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Yarp Publisher"
+	  SID			  "558"
+	  Ports			  [1]
+	  Position		  [410, 180, 470, 240]
+	  ZOrder		  1264
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Yarp Publisher"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  basePosePortName	  "'/collaborativeController/robot1/basePose:o'"
+	  jointPosPortName	  "'/collaborativeController/robot1/jointPosition:o'"
+	  nuPortName		  "'/collaborativeController/robot1/stateVelocity:o'"
+	  posCoMPortName	  "'/collaborativeController/robot1/CoMPosition:o'"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "State Yarp Publisher1"
+	  SID			  "545"
+	  Ports			  [1]
+	  Position		  [410, 45, 470, 105]
+	  ZOrder		  1251
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "4.9"
+	  SourceBlock		  "RobotStateLibrary/State Yarp Publisher"
+	  SourceType		  ""
+	  SourceProductName	  "robot-state-library"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  basePosePortName	  "'/collaborativeController/robotRef/basePose:o'"
+	  jointPosPortName	  "'/collaborativeController/robotRef/jointPosition:o'"
+	  nuPortName		  "'/collaborativeController/robotRef/stateVelocity:o'"
+	  posCoMPortName	  "'/collaborativeController/robotRef/CoMPosition:o'"
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "From\nWorkspace3"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "State Bus Serializer"
+	  SrcPort		  1
+	  DstBlock		  "State Yarp Publisher1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "From\nWorkspace2"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "From\nWorkspace4"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "From\nWorkspace7"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer1"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "From\nWorkspace1"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "From\nWorkspace6"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "State Bus Serializer1"
+	  SrcPort		  1
+	  DstBlock		  "State Yarp Publisher"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "From\nWorkspace5"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "From\nWorkspace"
+	  SrcPort		  1
+	  DstBlock		  "State Bus Serializer"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Dump and visualize"
+      SID		      "14"
+      Ports		      []
+      Position		      [-775, -105, -655, -75]
+      ZOrder		      1118
+      ForegroundColor	      "blue"
+      BackgroundColor	      "[0.333333, 1.000000, 1.000000]"
+      ShowName		      off
+      RequestExecContextInheritance off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		75
+	$ClassName		"Simulink.Mask"
+	Display			"disp('VISUALIZER')"
+      }
+      System {
+	Name			"Dump and visualize"
+	Location		[72, 27, 1920, 1080]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"128"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "489"
+	  Position		  [315, 305, 335, 325]
+	  ZOrder		  1246
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From"
+	  SID			  "290"
+	  Position		  [270, 271, 435, 299]
+	  ZOrder		  1244
+	  GotoTag		  "yarp_time"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "TIME_SCOPE"
+	  SID			  "107"
+	  Position		  [270, 144, 435, 186]
+	  ZOrder		  1221
+	  Value			  "Config.Scopes.TIME_SCOPE"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Time Scope"
+	  SID			  "109"
+	  Ports			  [2, 0, 1]
+	  Position		  [510, 269, 605, 331]
+	  ZOrder		  1220
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    76
+	    $ClassName		    "Simulink.Mask"
+	    RunInitForIconRedraw    "off"
+	  }
+	  System {
+	    Name		    "Time Scope"
+	    Location		    [72, 27, 1920, 1080]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yarp_time"
+	      SID		      "291"
+	      Position		      [45, 83, 75, 97]
+	      ZOrder		      4
+	      Port {
+		PortNumber		1
+		Name			"time"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "simulink_time"
+	      SID		      "490"
+	      Position		      [45, 243, 75, 257]
+	      ZOrder		      6
+	      Port		      "2"
+	      Port {
+		PortNumber		1
+		Name			"simulink time"
+	      }
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "111"
+	      Ports		      []
+	      Position		      [50, 40, 70, 60]
+	      ZOrder		      2
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Difference"
+	      SID		      "292"
+	      Ports		      [1, 1]
+	      Position		      [130, 117, 190, 153]
+	      ZOrder		      5
+	      LibraryVersion	      "1.488"
+	      SourceBlock	      "simulink/Discrete/Difference"
+	      SourceType	      "Difference"
+	      SourceProductBaseCode   "SL"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	      ICPrevInput	      "0.0"
+	      InputProcessing	      "Elements as channels (sample based)"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	      Port {
+		PortNumber		1
+		Name			"yarp time step"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Difference1"
+	      SID		      "493"
+	      Ports		      [1, 1]
+	      Position		      [145, 277, 205, 313]
+	      ZOrder		      301
+	      LibraryVersion	      "1.488"
+	      SourceBlock	      "simulink/Discrete/Difference"
+	      SourceType	      "Difference"
+	      SourceProductBaseCode   "SL"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	      ICPrevInput	      "0.0"
+	      InputProcessing	      "Elements as channels (sample based)"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	      Port {
+		PortNumber		1
+		Name			"simulink time step"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Minus"
+	      SID		      "492"
+	      Ports		      [2, 1]
+	      Position		      [240, 54, 265, 96]
+	      ZOrder		      300
+	      IconShape		      "rectangular"
+	      Inputs		      "-+"
+	      Port {
+		PortNumber		1
+		Name			"yarp time"
+	      }
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "494"
+	      Ports		      [2, 1]
+	      Position		      [395, 66, 400, 104]
+	      ZOrder		      302
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      SID		      "495"
+	      Ports		      [2, 1]
+	      Position		      [395, 126, 400, 164]
+	      ZOrder		      303
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Time Scope"
+	      SID		      "112"
+	      Ports		      [2]
+	      Position		      [460, 53, 530, 177]
+	      ZOrder		      1
+	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
+	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
+	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','m_B_hat','DataLogging',true),extmgr.Configuration('Vi"
+	      "suals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-1.90615','MaxYLimReal','17.15533','YLabe"
+	      "lReal','','MinYLimMag','0.00000','MaxYLimMag','17.15533','LegendVisibility','On','XGrid',true,'YGrid',true,'Plo"
+	      "tMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'C"
+	      "olorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;"
+	      "0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647"
+	      " 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Marker','"
+	      "o','MarkerSize',8)}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'yarp time','simulink time'}},'S"
+	      "howContent',true,'Placement',1),struct('MinYLimReal','0.00652','MaxYLimReal','0.01393','YLabelReal','','MinYLim"
+	      "Mag','19424.74895','MaxYLimMag','19430.23905','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',"
+	      "false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',"
+	      "[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862"
+	      "745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07"
+	      "45098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames'"
+	      ",{{}},'NumLines',2,'LineNames',{{'yarp time step','simulink time step'}},'ShowContent',true,'Placement',2)},'Di"
+	      "splayPropertyDefaults',struct('YLabelReal','','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0"
+	      "],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.62"
+	      "3529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569"
+	      " 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803"
+	      "92156863]),'DisplayLayoutDimensions',[2 1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigat"
+	      "ion',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Versio"
+	      "n','2020a')),'Version','2021b','Position',[361 228 1188 566])"
+	      NumInputPorts	      "2"
+	      Floating		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "holder\n"
+	      SID		      "491"
+	      Ports		      [1, 1]
+	      Position		      [145, 56, 190, 74]
+	      ZOrder		      15
+	      BackgroundColor	      "[0.537255, 0.721569, 1.000000]"
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/holder\n"
+	      SourceType	      "Holder"
+	      SourceProductName	      "WholeBodyToolbox"
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      ContentPreviewEnabled   on
+	    }
+	    Line {
+	      Name		      "time"
+	      ZOrder		      3
+	      Labels		      [0, 0]
+	      SrcBlock		      "yarp_time"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		ZOrder			19
+		Points			[0, -5]
+		Branch {
+		  ZOrder		  20
+		  Points		  [0, -20]
+		  DstBlock		  "holder\n"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  15
+		  DstBlock		  "Minus"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		ZOrder			12
+		Points			[0, 45]
+		DstBlock		"Difference"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "holder\n"
+	      SrcPort		      1
+	      DstBlock		      "Minus"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "simulink time"
+	      ZOrder		      17
+	      Labels		      [0, 0]
+	      SrcBlock		      "simulink_time"
+	      SrcPort		      1
+	      Points		      [36, 0]
+	      Branch {
+		ZOrder			24
+		Labels			[1, 1]
+		Points			[214, 0; 0, -155]
+		DstBlock		"Mux"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			23
+		Points			[0, 45]
+		DstBlock		"Difference1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Name		      "yarp time"
+	      ZOrder		      18
+	      Labels		      [1, 1]
+	      SrcBlock		      "Minus"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Time Scope"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "yarp time step"
+	      ZOrder		      25
+	      Labels		      [0, 0]
+	      SrcBlock		      "Difference"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "simulink time step"
+	      ZOrder		      26
+	      Labels		      [0, 0]
+	      SrcBlock		      "Difference1"
+	      SrcPort		      1
+	      Points		      [153, 0; 0, -140]
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      DstBlock		      "Time Scope"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  28
+	  SrcBlock		  "TIME_SCOPE"
+	  SrcPort		  1
+	  Points		  [115, 0]
+	  DstBlock		  "Time Scope"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  48
+	  SrcBlock		  "From"
+	  SrcPort		  1
+	  DstBlock		  "Time Scope"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  49
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "Time Scope"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "synchronizer"
+      SID		      "2"
+      Ports		      []
+      Position		      [-773, -167, -658, -137]
+      ZOrder		      1007
+      ForegroundColor	      "red"
+      BackgroundColor	      "green"
+      ShowName		      off
+      RequestExecContextInheritance off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		77
+	$ClassName		"Simulink.Mask"
+	Display			"disp('SYNCHRONIZER')"
+      }
+      System {
+	Name			"synchronizer"
+	Location		[72, 27, 1920, 1080]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"137"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "GAZEBO_SYNCHRONIZER"
+	  SID			  "3"
+	  Ports			  [0, 0, 1]
+	  Position		  [5, 15, 130, 75]
+	  ZOrder		  -7
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "GAZEBO_SYNCHRONIZER"
+	    Location		    [72, 27, 1920, 1080]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "235"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "4"
+	      Ports		      []
+	      Position		      [177, 85, 197, 105]
+	      ZOrder		      538
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulator Synchronizer"
+	      SID		      "5"
+	      Ports		      []
+	      Position		      [120, 24, 250, 61]
+	      ZOrder		      539
+	      ForegroundColor	      "[0.490196, 0.000000, 0.000000]"
+	      ShowName		      off
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/Simulator Synchronizer"
+	      SourceType	      "Simulator Synchronizer"
+	      SourceProductName	      "WholeBodyToolbox"
+	      MultiThreadCoSim	      "auto"
+	      period		      "Config.tStep"
+	      serverPortName	      "'/clock/rpc'"
+	      clientPortName	      "'/WBT_synchronizer/rpc:o'"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "6"
+	  Ports			  [1, 1]
+	  Position		  [-30, -34, -5, -16]
+	  ZOrder		  307
+	  BlockMirror		  on
+	  NameLocation		  "top"
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ON_GAZEBO\n"
+	  SID			  "7"
+	  Position		  [95, -35, 210, -15]
+	  ZOrder		  304
+	  BlockMirror		  on
+	  NameLocation		  "top"
+	  ShowName		  off
+	  Value			  "Config.ON_GAZEBO"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "REAL_TIME_SYNC"
+	  SID			  "8"
+	  Ports			  [0, 0, 1]
+	  Position		  [-160, 17, -35, 77]
+	  ZOrder		  -9
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "REAL_TIME_SYNC"
+	    Location		    [1734, -765, 3394, 377]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "600"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "9"
+	      Ports		      []
+	      Position		      [167, 90, 187, 110]
+	      ZOrder		      538
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Real Time Synchronizer"
+	      SID		      "10"
+	      Ports		      []
+	      Position		      [115, 34, 240, 71]
+	      ZOrder		      539
+	      ForegroundColor	      "[0.916667, 0.916667, 0.916667]"
+	      BackgroundColor	      "gray"
+	      ShowName		      off
+	      LibraryVersion	      "4.0"
+	      SourceBlock	      "WBToolboxLibrary/Utilities/Real Time Synchronizer"
+	      SourceType	      "Real Time Synchronizer"
+	      SourceProductName	      "WholeBodyToolbox"
+	      MultiThreadCoSim	      "auto"
+	      period		      "Config.tStep"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  SID			  "11"
+	  Ports			  [1]
+	  Position		  [125, -95, 185, -75]
+	  ZOrder		  699
+	  ShowName		  off
+	  HideAutomaticName	  off
+	  VariableName		  "yarp_time"
+	  MaxDataPoints		  "inf"
+	  SaveFormat		  "Structure With Time"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Yarp Clock"
+	  SID			  "12"
+	  Ports			  [0, 1]
+	  Position		  [-50, -94, 15, -76]
+	  ZOrder		  698
+	  ForegroundColor	  "[0.490196, 0.000000, 0.000000]"
+	  ShowName		  off
+	  HideAutomaticName	  off
+	  LibraryVersion	  "4.0"
+	  SourceBlock		  "WBToolboxLibrary/Utilities/Yarp Clock"
+	  SourceType		  "YARP Clock"
+	  SourceProductName	  "WholeBodyToolbox"
+	  MultiThreadCoSim	  "auto"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "yarp_time"
+	  SID			  "13"
+	  Position		  [125, -134, 190, -116]
+	  ZOrder		  700
+	  GotoTag		  "yarp_time"
+	  TagVisibility		  "global"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  Points		  [-60, 0]
+	  DstBlock		  "REAL_TIME_SYNC"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "ON_GAZEBO\n"
+	  SrcPort		  1
+	  Points		  [-25, 0]
+	  Branch {
+	    ZOrder		    3
+	    DstBlock		    "GAZEBO_SYNCHRONIZER"
+	    DstPort		    enable
+	  }
+	  Branch {
+	    ZOrder		    4
+	    DstBlock		    "Logical\nOperator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Yarp Clock"
+	  SrcPort		  1
+	  Points		  [63, 0]
+	  Branch {
+	    ZOrder		    7
+	    Points		    [0, -40]
+	    DstBlock		    "yarp_time"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    6
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000046
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "MomentumBasedController_R2020b"
+    sfVersion		    80000036
+    firstTarget		    2
+  }
+  target {
+    id			    2
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
+  }
+}

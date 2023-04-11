@@ -1,0 +1,168 @@
+<?xml version='1.0'?>
+<robot name="box">
+  <pose>0 0 1.0 0.0 0.0 0.0</pose>
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2"/>
+      <inertia ixx="0.0418" iyy="0.0418" izz="0.0833" ixy="0.0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision name='base_link_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.5     0.5    0.025"/>
+      </geometry>
+      <max_contacts>10</max_contacts>
+      <surface>
+        <contact>
+          <ode>
+            <soft_erp>0.2</soft_erp>
+            <soft_cfm>0</soft_cfm>
+            <kp>18000000</kp>
+            <kd>100</kd>
+            <max_vel>100</max_vel>
+            <min_depth>0.0001</min_depth>
+          </ode>
+        </contact>
+        <friction>
+          <ode>
+            <mu>1</mu>
+            <mu2>1</mu2>
+            <fdir1>0 0 0</fdir1>
+            <slip1>0</slip1>
+            <slip2>0</slip2>
+          </ode>
+        </friction>
+        <bounce>
+          <restitution_coefficient>0</restitution_coefficient>
+          <threshold>100000</threshold>
+        </bounce>
+      </surface>
+    </collision>
+    <visual name="base_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.5     0.5    0.025"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Handle Dummy Links -->
+  <link name="side1_left_dummy_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.000209" iyy="0.000209" izz="0.000416" ixy="0.0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision name='side1_left_dummy_link_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual name="side1_left_dummy_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="side1_right_dummy_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.000209" iyy="0.000209" izz="0.000416" ixy="0.0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision name='side1_right_dummy_link_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual name="side1_right_dummy_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="side2_left_dummy_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.000209" iyy="0.000209" izz="0.000416" ixy="0.0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision name='side2_left_dummy_link_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual name="side2_left_dummy_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="side2_right_dummy_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.000209" iyy="0.000209" izz="0.000416" ixy="0.0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision name='side2_right_dummy_link_collision'>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual name="side2_right_dummy_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="joint1" type="fixed">
+    <parent link="base_link"/>
+    <child link="side1_left_dummy_link"/>
+    <dynamics damping="0.1"/>
+    <origin xyz="-0.25 0.2 0.025" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="joint2" type="fixed">
+    <parent link="base_link"/>
+    <child link="side1_right_dummy_link"/>
+    <origin xyz="-0.25 -0.2 0.025" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="joint3" type="fixed">
+    <parent link="base_link"/>
+    <child link="side2_left_dummy_link"/> 
+    <origin xyz="0.25 0.2 0.025" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="joint4" type="fixed">
+    <parent link="base_link"/>
+    <child link="side2_right_dummy_link"/>
+    <origin xyz="0.25 -0.2 0.025" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <gazebo reference="joint1">
+    <preserveFixedJoint>true</preserveFixedJoint>
+  </gazebo>
+  <gazebo reference="joint2">
+    <preserveFixedJoint>true</preserveFixedJoint>
+  </gazebo>
+  <gazebo reference="joint3">
+    <preserveFixedJoint>true</preserveFixedJoint>
+  </gazebo>
+  <gazebo reference="joint4">
+    <preserveFixedJoint>true</preserveFixedJoint>
+  </gazebo>
+
+</robot>
