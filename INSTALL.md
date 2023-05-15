@@ -1,5 +1,9 @@
 ## Dependecies
-
+All the required dependencies can be installed using the [`robotology-superbuild`](https://github.com/robotology/robotology-superbuild).
+In order to install them follow the instruction in [robotology-superbuild documentation](https://github.com/robotology/robotology-superbuild/tree/master#robotology-superbuild), and make sure that the following [options](https://github.com/robotology/robotology-superbuild/blob/master/doc/cmake-options.md#robotology-superbuild-cmake-options) are enabled (and the associated dependencies are installed):
+- `ROBOTOLOGY_ENABLE_HUMAN_DYNAMICS`
+- `ROBOTOLOGY_USES_MATLAB`
+- `ROBOTOLOGY_USES_GAZEBO`
 
 ## Installation
 Clone the repository and create a `build` directory:
