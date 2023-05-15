@@ -6,8 +6,8 @@ In order to use multiple robots in Gazebo, follow the instructions in [`two_robo
 Clone the repository and create a `build` directory under the `element_wearable_sw` directory for example by using a terminal:
 
 ~~~bash
-git clone https://github.com/dic-iit/element_ergonomy-control
-cd element_ergonomy/
+git clone https://github.com/ami-iit/paper_rapetti_2023_icra_ergonomic_payload_lifting.git
+cd paper_rapetti_2023_icra_ergonomic_payload_lifting/
 mkdir build
 ~~~
 
@@ -25,7 +25,7 @@ make install
 Once the installation is completed, append the following lines to your `.bashrc`:
 
 ```bash
-export YARP_DATA_DIRS=$YARP_DATA_DIRS:<directory-where-you-downloaded-element_ergonomy-control>/build/install/share/ergonomy-control
-export YARP_DATA_DIRS=$YARP_DATA_DIRS:<directory-where-you-downloaded-element_ergonomy-control>/build/install/share/ergonomy-control/robots
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:<directory-where-you-downloaded-element_ergonomy-control>/build/install/share/ergonomy-control/robots
+export YARP_DATA_DIRS=$YARP_DATA_DIRS:<directory-where-you-downloaded-repository>/build/install/share/ergonomy-control
+export YARP_DATA_DIRS=$YARP_DATA_DIRS:<directory-where-you-downloaded-repository>/build/install/share/ergonomy-control/robots
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:<directory-where-you-downloaded-repository>/build/install/share/ergonomy-control/robots
 ```
