@@ -3,3 +3,4 @@
 # Authors: Lorenzo Rapetti <lorenzo.rapetti@iit.it>
 
 add_subdirectory(matlab-library)
+add_subdirectory(simulink-library)

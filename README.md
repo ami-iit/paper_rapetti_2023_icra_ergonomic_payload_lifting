@@ -33,7 +33,10 @@ In this paper, we present a control approach for human-robot collaboration based
 account the ergonomic requirements of the agents. Validation has been performed in an experimental scenario using the iCub3 humanoid robot and a human subject sensorized with the iFeel wearable system.
 
 ## Reproducing the experiments
-TODO
+The instruction to install the required software can be found in [INSTALL documentation](INSTALL.md). Following the instruction, you will be able to use:
+- [Gazebo models for collaborative tasks](app/models/README.md)
+- [Visualizer for multi-agent interaction](modules/MultiRobotVisualizer/README.md)
+- [Simulink controllers for human-robot collaboration](whole-body-controllers/README.md)
 
 ## Citing this work
 
