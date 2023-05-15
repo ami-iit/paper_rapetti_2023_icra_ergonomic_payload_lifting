@@ -21,7 +21,7 @@ https://github.com/ami-iit/paper_rapetti_2023_icra_ergonomic_payload_lifting/ass
 </div>
  
 <div align="center">
-  <a href="#reproducing-the-experiments"><b>Installation</b></a> |
+  <a href="INSTALL.md"><b>Installation</b></a> |
   <a href=""><b>arXiv</b></a> | 
   <a href="https://youtu.be/wJTRQpjeHMc"><b>YouTube</b></a>
 </div>
