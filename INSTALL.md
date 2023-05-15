@@ -5,6 +5,8 @@ In order to install them follow the instruction in [robotology-superbuild docume
 - `ROBOTOLOGY_USES_MATLAB`
 - `ROBOTOLOGY_USES_GAZEBO`
 
+⚠️ **minimum Simulink required version is `Simulink 10.4` (`R2021b`)**
+
 ## Installation
 Clone the repository and create a `build` directory:
 
