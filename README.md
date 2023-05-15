@@ -1,5 +1,5 @@
 <h1 align="center">
- A Control Approach for Human-Robot Ergonomic Payload Lifting
+ A Control Approach for Human-Robot <br /> Ergonomic Payload Lifting
 </h1>
 
 <div align="center">
