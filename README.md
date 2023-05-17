@@ -44,7 +44,7 @@ If you find the work useful, please consider citing:
 
 ```bibtex
 @INPROCEEDINGS{rapetti2023control,
-   author={Rapetti, Lorenzo and Sartore, Carlotta and Tirupachuri, Yeshasvi and Draicchio, Francesco and Kawakami, Tomohiro and Yoshiike, Takahide and Pucci, Daniele},
+   author={Lorenzo Rapetti and Carlotta Sartore and Mohamed Elobaid and Yeshasvi Tirupachuri and Francesco Draicchio and Tomohiro Kawakami and Takahide Yoshiike and Daniele Pucci},
    booktitle={2023 International Conference on Robotics and Automation (ICRA)},
    title={A Control Approach for Human-Robot Ergonomic Payload Lifting},
    year={2023},
