@@ -38,6 +38,8 @@ The instruction to install the required software can be found in [INSTALL docume
 - [Visualizer for multi-agent interaction](modules/MultiRobotVisualizer/README.md)
 - [Simulink controllers for human-robot collaboration](whole-body-controllers/README.md)
 
+Human models can be generated using the [`human-model-generator`](https://github.com/ami-iit/human-model-generator) python tool.
+
 ## Citing this work
 
 If you find the work useful, please consider citing:
