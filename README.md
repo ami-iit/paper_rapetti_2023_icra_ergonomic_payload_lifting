@@ -23,6 +23,7 @@ https://github.com/ami-iit/paper_rapetti_2023_icra_ergonomic_payload_lifting/ass
 <div align="center">
   <a href="INSTALL.md"><b>Installation</b></a> |
   <a href="https://arxiv.org/abs/2305.08499"><b>arXiv</b></a> | 
+  <a href="https://ieeexplore.ieee.org/document/10161454"><b>paper</b></a> | 
   <a href="https://youtu.be/wJTRQpjeHMc"><b>YouTube</b></a>
 </div>
 
